@@ -1,0 +1,5 @@
+# AdSense ads.txt
+# Kun AdSense-tilisi on hyväksytty, korvaa tämän tiedoston sisältö Googlen antamalla
+# rivillä, jonka muodossa on esimerkiksi:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Älä käytä yllä olevaa esimerkkiriviä sellaisenaan.

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Laskuripankki – ilmaiset laskurit prosentteihin, alennuksiin, ALV:hen, keskiarvoihin, korkoihin, päivämääriin, ikään, aikaeroon, muunnoksiin, kilometrikorvauksiin, palkkaan ja budjettiin.">
+  <title>Laskuripankki – Ilmaiset laskurit</title>
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/laskuripankki/">
+  <link rel="icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- AdSense: lisää Googlen antama skripti tänne <head>-osaan hyväksynnän jälkeen. -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Laskuripankki etusivu">
+        <span class="brand-mark">∑</span>
+        <span>Laskuripankki</span>
+      </a>
+      <nav class="nav">
+        <a href="#laskurit">Laskurit</a>
+        <a href="#ohjeet">Ohjeet</a>
+        <a href="privacy.html">Tietosuoja</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">ILMAISET VERKKOLASKURIT</p>
+        <h1>Laske nopeasti. Ilman turhaa säätöä.</h1>
+        <p class="hero-copy">Kymmenen+ hyödyllistä laskuria arkeen, opiskeluun ja rahaan. Kaikki toimii suoraan selaimessa ilman kirjautumista.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#laskurit">Avaa laskurit</a>
+          <a class="button secondary" href="#ohjeet">Miten tämä toimii?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container ad-section" aria-label="Mainos">
+      <div class="ad-placeholder">
+        <span>Mainospaikka</span>
+        <small>AdSense voidaan liittää tähän hyväksynnän jälkeen.</small>
+      </div>
+    </section>
+
+    <section id="laskurit" class="container section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">TYÖKALUT</p>
+          <h2>Kaikki laskurit</h2>
+        </div>
+        <div class="search-wrap">
+          <label class="sr-only" for="search">Hae laskuria</label>
+          <input id="search" type="search" placeholder="Hae laskuria…" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="category-tabs" role="tablist" aria-label="Laskurikategoriat">
+        <button class="tab active" data-category="Kaikki">Kaikki</button>
+        <button class="tab" data-category="Raha">Raha</button>
+        <button class="tab" data-category="Aika">Aika</button>
+        <button class="tab" data-category="Opiskelu">Opiskelu</button>
+        <button class="tab" data-category="Muut">Muut</button>
+      </div>
+
+      <div id="calculator-grid" class="calculator-grid"></div>
+      <p id="no-results" class="no-results hidden">Ei laskureita tällä haulla.</p>
+    </section>
+
+    <section class="container ad-section" aria-label="Mainos">
+      <div class="ad-placeholder">
+        <span>Mainospaikka</span>
+        <small>Voit käyttää tätä kohtaa keskellä sisältöä.</small>
+      </div>
+    </section>
+
+    <section id="ohjeet" class="container section info-grid">
+      <article class="info-card">
+        <p class="eyebrow">MIKSI TÄMÄ?</p>
+        <h2>Kaikki lasketaan selaimessa</h2>
+        <p>Laskurien peruslaskenta tapahtuu käyttäjän omalla laitteella. Sivusto ei tarvitse käyttäjätiliä eikä lähetä laskurin arvoja palvelimelle.</p>
+      </article>
+      <article class="info-card">
+        <p class="eyebrow">MAINOKSET</p>
+        <h2>Valmiit paikat mainoksille</h2>
+        <p>Mainospaikat ovat jo rakenteessa. Kun AdSense-tili ja sivuston hyväksyntä ovat kunnossa, Googlen antama mainoskoodi voidaan lisätä näihin kohtiin.</p>
+      </article>
+      <article class="info-card">
+        <p class="eyebrow">HUOM</p>
+        <h2>Tarkista viralliset luvut</h2>
+        <p>Esimerkiksi verot, ALV, kilometrikorvaukset ja muut vuosittain muuttuvat arvot kannattaa tarkistaa aina virallisesta lähteestä ennen päätöksiä.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Laskuripankki</strong><span>© <span id="year"></span></span></div>
+      <div class="footer-links">
+        <a href="privacy.html">Tietosuoja</a>
+        <a href="terms.html">Käyttöehdot</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="calculator-dialog" class="modal">
+    <div class="modal-head">
+      <div>
+        <p id="modal-category" class="eyebrow"></p>
+        <h2 id="modal-title"></h2>
+      </div>
+      <button id="close-dialog" class="icon-button" aria-label="Sulje">×</button>
+    </div>
+    <div id="modal-description" class="modal-description"></div>
+    <div id="modal-body"></div>
+  </dialog>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
